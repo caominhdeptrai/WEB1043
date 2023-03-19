@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3 - Lab 3</title>
+    <script src="lab33.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="row">
+          <input type="button" value="7" onclick="toan_hang('7')">
+          <input type="button" value="8" onclick="toan_hang('8')">
+          <input type="button" value="9" onclick="toan_hang('9')">
+          <input type="button" value="+" onclick="toan_tu('+')">
+        </div>
+        <div class="row">
+          <input type="button" value="4" onclick="toan_hang('4')">
+          <input type="button" value="5" onclick="toan_hang('5')">
+          <input type="button" value="6" onclick="toan_hang('6')">
+          <input type="button" value="-" onclick="toan_tu('-')">
+        </div>
+        <div class="row">
+          <input type="button" value="1" onclick="toan_hang('1')">
+          <input type="button" value="2" onclick="toan_hang('2')">
+          <input type="button" value="3" onclick="toan_hang('3')">
+          <input type="button" value="*" onclick="toan_tu('*')">
+        </div>
+        <div class="row">
+          <input type="button" value="0" onclick="toan_hang('0')">
+          <input type="button" value="C" onclick="lam_lai()">
+          <input type="button" value="=" onclick="thuc_hien()">
+          <input type="button" value="/" onclick="toan_tu('/')">
+        </div>
+    </div>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        .calculator {
+          border: 1px solid #ccc;
+          padding: 20px;
+          width: 300px;
+        }
+    
+        .calculator input[type="text"] {
+          border: none;
+          padding: 5px;
+          font-size: 24px;
+          width: 100%;
+          text-align: right;
+        }
+    
+        .calculator input[type="button"] {
+          border: none;
+          background-color: #eee;
+          padding: 10px;
+          width: 50%;
+          font-size: 18px;
+          cursor: pointer;
+        }
+    
+        .calculator input[type="button"]:hover {
+          background-color: #ddd;
+        }
+    
+        .calculator .row {
+          margin-top: 10px;
+          display: flex;
+        }
+    
+        .calculator .row .col {
+          flex: 1;
+          margin: 0 5px;
+        }
+    
+        .calculator .row .col:nth-child(3) {
+          margin-right: 0;
+        }
+    </style>
+</body>
+</html>
